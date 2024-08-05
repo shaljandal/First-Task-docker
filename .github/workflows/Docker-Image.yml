@@ -30,7 +30,7 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker build . -t shahadkh/First-Task-docker:latest
-        docker push shahadkh/your-image-name:latest
+        docker push shahadkh/First-Task-docker:latest
 
     - name: Log out from Docker Hub
       run: docker logout
