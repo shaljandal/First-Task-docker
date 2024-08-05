@@ -29,8 +29,8 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build . -t shahadkh/First-Task-docker:latest
-        docker push shahadkh/First-Task-docker:latest
+        docker build . -t ${{ secrets.DOCKER_USERNAME }}/First-Task-docker:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/First-Task-docker:latest
 
     - name: Log out from Docker Hub
       run: docker logout
